@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wikiphoto</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--Carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="imagenes/imagen1.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>¿ Te gusta la fotografía ?</h5>
+                <p>Únete a la comunidad</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imagenes/imagen2.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Comparte tus fotografías con nosotros</h5>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imagenes/imagen3.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Aprende las técnicas que necesitas</h5>
+                <p>Para captar momentos como este</p>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+      <!--NavBar-->
+      <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand text-warning" href="#">wikiphoto</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item active">
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Galería
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Paisajes</a>
+                  <a class="dropdown-item" href="#">Bodas</a>
+                  <a class="dropdown-item" href="#">Deportes</a>
+                  <a class="dropdown-item" href="#">Comida</a>
+                  <a class="dropdown-item" href="#">Vehículos</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="#">Nuevos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 mr-2">
+            <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" >
+            <button class="btn btn-outline-light my-2 my-sm-0 text-warning" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div class="contenido">
+        <!--Jumbotron-->
+        <div class="jumbotron text-center">
+          <h1 class="display-4">Páginas de ayuda</h1>
+          <p class="lead">Ponemos a tu disposición páginas las cuáles podrás adquirir información, cámaras, edición de imágenes, etc.</p>
+          <hr class="my-4">
+        </div>
+      <!--Columnas-->
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="imagenes/pag1.JPG" alt="dpreview">
+            <div class="card-body">
+              <h5 class="card-title">DPREVIEW</h5>
+              <p class="card-text">Proporciona noticias, artículos y reseñas de expertos.</p>
+              <p class="card-text">En esta página encontrará nuestra completa colección de guías de compra de cámaras y lentes, organizadas por precio y por caso de uso. Independientemente del tipo de fotografía que disfrute, le ayudaremos a encontrar algo que se adapte a sus necesidades y a su presupuesto.</p>
+              <a href="#" class="btn btn-primary">Sitio web</a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="imagenes/pag2.JPG" alt="javiersomoza">
+            <div class="card-body">
+              <h5 class="card-title">JAVIERSOMOZA</h5>
+              <p class="card-text">Tutoriales sobre fotografía.</p>
+              <p class="card-text">La fotografía de viajes y aventura se ha convertido en una de las más populares actualmente en las redes sociales y cada vez se ven más fotógraf@s que destacan en este campo. Este es el caso de Nacho Zaitsev, un fotógrafo madrileño que, a través de sus fotografías, muestra el día a día en sus</p>
+              <a href="#" class="btn btn-primary">Sitio web</a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="imagenes/pag3.JPG" alt="pixlr">
+            <div class="card-body">
+              <h5 class="card-title">PIXLR</h5>
+              <p class="card-text">Herramienta online que te ofrece una amplia serie de ventajas, con similitudes con el Photoshop de escritorio.</p>
+              <a href="#" class="btn btn-primary">Sitio web</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>
