@@ -133,36 +133,160 @@
         </div>
         <!--Jumbotron-->
         <div class="jumbotron text-center">
-          <h1 class="display-4">Comenta con los demás Usuarios</h1>
-          <p class="lead">Ponemos a tu disposición distintos apartados donde poder comentar</p>
+          <h1 class="display-4">Valora a los demás usuarios</h1>
+          <p class="lead">Puedes valorar positivamente o negativamente los comentarios de los demás usuarios, y a su vez, ellos los tuyos!</p>
           <hr class="my-4">
         </div>
-        <!--Column-->
+        <!--Contenedor-->
         <div class="container text-center">
           <div class="row">
             <div class="col-3">
-              <figure class="figure">
-                <img src="imagenes/cara1.jfif" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-                <figcaption class="figure-caption">A caption for the above image.</figcaption>
-              </figure>
+              <!--Utilidad Imágen-->
+              <img src="imagenes/cara1.jpg" class="img-fluid rounded-circle">
+              <!--Utilidad Texto-->
+              <span class="d-inline-block text-truncate" style="max-width: 150px;">
+                Antes de empezar me gustaría remarcar 
+              </span><br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                Ver Comentario
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Juan:</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Antes de empezar me gustaría remarcar el nivel de calidad de nuestros jóvenes fotógrafos, es muy grato ver como las nuevas generaciones de fotógrafos suben con fuerza!
+                    </div>
+                    <!--Grupo de botones-->
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success"><i class="far fa-thumbs-up"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="far fa-thumbs-down"></i></button>
+                      </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-3">
-              <figure class="figure">
-                <img src="imagenes/cara2.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-                <figcaption class="figure-caption">A caption for the above image.</figcaption>
-              </figure>
+              <img src="imagenes/cara2.jpg" class="img-fluid rounded-circle">
+              <!--Utilidad Texto-->
+              <span class="d-inline-block text-truncate" style="max-width: 150px;">
+                Uno de los grandes cambios en la técnica fotográfica
+              </span><br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
+                Ver Comentario
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Paco:</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Uno de los grandes cambios en la técnica fotográfica de un autor es el descubrimiento del trípode, que frecuentemente 
+                      va acompañado de la incorporación al equipo de un cable disparador y la preocupación por reducir cualquier tipo de 
+                      trepidación que pueda afectar negativamente a la calidad de la imagen resultante. 
+                      Pronto también se busca la forma de levantar el espejo de reenvío de la imagen para evitar su impacto y transmisión de vibraciones.
+                    </div>
+                    <!--Grupo de botones-->
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success"><i class="far fa-thumbs-up"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="far fa-thumbs-down"></i></button>
+                      </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-3">
-              <figure class="figure">
-                <img src="imagenes/cara3.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-                <figcaption class="figure-caption">A caption for the above image.</figcaption>
-              </figure>
+              <img src="imagenes/cara3.jpg" class="img-fluid rounded-circle">
+              <!--Utilidad Texto-->
+              <span class="d-inline-block text-truncate" style="max-width: 150px;">
+                Es sencillo elegir una porción del
+              </span><br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
+                Ver Comentario
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Arturo:</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Es sencillo elegir una porción del paisaje con volumen y contraste y realizar series de tomas con luz natural. Se eligió una focal larga tras 
+                      realizar tomas abiertas que incluían los observatorios como referencia. El zoom tele, con el uso del convertidor de focal 1.4x, 
+                      permite aislar más las diversas zonas y lograr varias series similares, pero de distintas zonas de nubes. Se utilizó trípode, cable disparador y 
+                      levantamiento del espejo para prevenir trepidaciones, el primer problema de la caída de calidad con el uso de teleobjetivos. 
+                      No se utilizó ningún filtro y el contraste se realizó en la edición de la imagen, ajustando los niveles hasta aproximar el del negro puro.
+                    </div>
+                    <!--Grupo de botones-->
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success"><i class="far fa-thumbs-up"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="far fa-thumbs-down"></i></button>
+                      </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-3">
-              <figure class="figure">
-                <img src="imagenes/cara4.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-                <figcaption class="figure-caption">A caption for the above image.</figcaption>
-              </figure>
+              <img src="imagenes/cara4.jpg" class="img-fluid rounded-circle">
+              <!--Utilidad Texto-->
+              <span class="d-inline-block text-truncate" style="max-width: 150px;">
+                La primera es expresar mi alegría por
+              </span><br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal4">
+                Ver Comentario
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Marian:</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Antes de empezar, me gustaría comentar un par de cosas. La primera es expresar mi alegría por haber sido elegido para esta tarea,
+                      pues es todo un honor que pueda ayudar (en la medida de lo posible) a que los fotógrafos mas jóvenes crezcan un poco más respaldados 
+                      por los que ya llevamos algo más de “guerra”. La segunda cosa que quiero subrayar es que soy plenamente consciente de que es más fácil
+                      criticar una fotografía que realizarla, que no es lo mismo el trabajo que cuesta captar una imagen que el de mirarla sentado 
+                      cómodamente y criticarla, por lo que pido de antemano perdón porsi alguien cree que mis comentarios son poco justos. Ante todo, estoy aquí para dar mi punto de vista, ¡no para juzgar la labor de nadie!
+                    </div>
+                    <!--Grupo de botones-->
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success"><i class="far fa-thumbs-up"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="far fa-thumbs-down"></i></button>
+                      </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
