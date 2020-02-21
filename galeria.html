@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wikiphoto</title>
+    <script src="https://kit.fontawesome.com/eb7b540af7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--NavBar-->
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand text-warning" href="#">wikiphoto</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item active">
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Galería
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item active" href="#">Paisajes</a>
+              <a class="dropdown-item" href="#">Bodas</a>
+              <a class="dropdown-item" href="#">Deportes</a>
+              <a class="dropdown-item" href="#">Comida</a>
+              <a class="dropdown-item" href="#">Vehículos</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="#">Nuevos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0 mr-2">
+        <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" >
+        <button class="btn btn-outline-light my-2 my-sm-0 text-warning" type="submit">Search</button>
+      </form>
+      <!--Badges-->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalIniciar">
+        Iniciar Sesión <span class="badge badge-light"><i class="fas fa-user"></i></span>
+      </button>
+      <!--Modal-->
+      <div class="modal fade" id="modalIniciar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Iniciar Sesión</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!--Formulario inicio sesión-->
+              <form>
+                <!--Input Group -->
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="email">Email</span>
+                  </div>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email" placeholder="Introduce email">
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="email">Contraseña</span>
+                  </div>
+                  <input type="password" class="form-control" id="exampleInputEmail2" aria-describedby="contraseña" placeholder="Introduce Contraseña">
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRegistrar" aria-expanded="false" aria-controls="collapseExample">
+                  Registrar
+                </button>
+              </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+            <!--Collapse-->
+            <div class="collapse" id="collapseRegistrar">
+              <div class="card card-body">
+                <!--Formulario de registro-->
+                <form>
+                  <!--Grupo de formulario-->
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Nombre usuario</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Contraseña</label>
+                    <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Contraseña">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="formGroupExampleInput2" aria-describedby="email" placeholder="Inbtroduce email">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Dirección</label>
+                    <input type="textt" class="form-control" id="formGroupExampleInput2" placeholder="Dirección">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Nº Teléfono</label>
+                    <input type="tel" class="form-control" id="formGroupExampleInput2" placeholder="Nº Teléfono">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Registrar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div>
+  <!--Migas de pan-->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+      <li class="breadcrumb-item"><a href="#">Galeria</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Paisajes</li>
+    </ol>
+  </nav>
+  <hr>
+  <nav class="nav nav-pills nav-justified">
+    <a class="nav-item nav-link" href="#">Lo Mas Visto</a>
+    <a class="nav-item nav-link active" href="#">Lo Mas Nuevo</a>
+    <a class="nav-item nav-link" href="#">Lo Mas Valorados</a>
+  </nav>
+  <hr>
+    <div class="row justify-content-center">
+        <!--Padding y Border-->
+        <div class="col px-md-3"><div class="p-3 border bg-light">
+            <img src="imagenes/paisaje/p1.jpg" alt="">
+        </div></div>
+        <div class="col px-md-3"><div class="p-3 border bg-light">
+            <img src="imagenes/paisaje/p2.jpg" alt="">
+        </div></div>
+        <div class="col px-md-3"><div class="p-3 border bg-light">
+            <img src="imagenes/paisaje/p3.jpg" alt="">
+        </div></div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col px-md-3"><div class="p-3 border bg-light">
+            <img src="imagenes/paisaje/p4.jfif" alt="">
+        </div></div>
+        <div class="col px-md-3"><div class="p-3 border bg-light">
+            <img src="imagenes/paisaje/p5.jpg" alt="">
+        </div></div>
+        <div class="col px-md-3"><div class="p-3 border bg-light">
+            <img src="imagenes/paisaje/p6.jpeg" alt="">
+        </div></div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col px-md-3"><div class="p-3 border bg-light">
+            <img src="imagenes/paisaje/p7.jpg" alt="">
+        </div></div>
+        <div class="col px-md-3"><div class="p-3 border bg-light">
+            <img src="imagenes/paisaje/p8.jfif" alt="">
+        </div></div>
+        <div class="col px-md-3"><div class="p-3 border bg-light">
+            <img src="imagenes/paisaje/p9.jpg" alt="">
+        </div></div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col px-md-3"><div class="p-3 border bg-light">
+            <img src="imagenes/paisaje/p10.jfif" alt="">
+        </div></div>
+        <div class="col px-md-3"><div class="p-3 border bg-light">
+            <img src="imagenes/paisaje/p11.jfif" alt="">
+        </div></div>
+        <div class="col px-md-3"><div class="p-3 border bg-light">
+            <img src="imagenes/paisaje/p12.jfif" alt="">
+        </div></div>
+    </div>
+  <!--Paginación-->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only"></span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only"></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
