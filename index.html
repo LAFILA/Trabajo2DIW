@@ -89,9 +89,76 @@
             <button class="btn btn-outline-light my-2 my-sm-0 text-warning" type="submit">Search</button>
           </form>
           <!--Badges-->
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalIniciar">
             Iniciar Sesión <span class="badge badge-light"><i class="fas fa-user"></i></span>
           </button>
+          <!--Modal-->
+          <div class="modal fade" id="modalIniciar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Iniciar Sesión</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!--Formulario inicio sesión-->
+                  <form>
+                    <!--Input Group -->
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="email">Email</span>
+                      </div>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email" placeholder="Introduce email">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="email">Contraseña</span>
+                      </div>
+                      <input type="password" class="form-control" id="exampleInputEmail2" aria-describedby="contraseña" placeholder="Introduce Contraseña">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRegistrar" aria-expanded="false" aria-controls="collapseExample">
+                      Registrar
+                    </button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+                <!--Collapse-->
+                <div class="collapse" id="collapseRegistrar">
+                  <div class="card card-body">
+                    <!--Formulario de registro-->
+                    <form>
+                      <!--Grupo de formulario-->
+                      <div class="form-group">
+                        <label for="formGroupExampleInput">Nombre usuario</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+                      </div>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput2">Contraseña</label>
+                        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Contraseña">
+                      </div>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput2">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="formGroupExampleInput2" aria-describedby="email" placeholder="Inbtroduce email">
+                      </div>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput2">Dirección</label>
+                        <input type="textt" class="form-control" id="formGroupExampleInput2" placeholder="Dirección">
+                      </div>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput2">Nº Teléfono</label>
+                        <input type="tel" class="form-control" id="formGroupExampleInput2" placeholder="Nº Teléfono">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Registrar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
       <i class="far fa-user"></i>
